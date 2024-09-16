@@ -1,0 +1,4 @@
+.productCls{
+    display: flex;
+    flex-wrap: wrap;
+}

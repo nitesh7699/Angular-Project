@@ -1,0 +1,28 @@
+<div class="container">
+<!-- <p>Name: {{ product.name}}</p>
+<p>Price: {{ '$' + product.price}}</p>
+<p>{{ product.inStock >0 ? 'Only' + product.inStock + ' items Left:' : 'Not in stock' }}</p>
+<button [disabled] = "!(product.inStock > 0)">BUY NOW</button>
+<br>
+<input [value]="product.customerName" (input)="onNameChange($event)">
+<p>name = {{name}}</p>
+<button (click)="decrementCartValue()">-</button>
+<span>{{ addToCart }}</span>
+<button (click)="incrementCartValue()">+</button> -->
+
+    <app-search (searchTextChanged)="setSearchText($event)"></app-search>
+
+    <!-- <div *ngFor="let item of [1,2,3,4,5,6,7,8]">
+        <p>current element of array is : {{ item }}</p>
+    </div> -->
+
+    <div *ngFor="let item of listOfString">
+        <p>current element of array is : {{ item }}</p>
+    </div>
+    <hr>
+
+    <app-product-list-new [searchText]="searchText" #productListComponent></app-product-list-new>
+    <app-product-detail *ngIf="productListComponent.selectedProduct" [productListComp]="productListNewComponent"></app-product-detail>
+</div>
+
+<!-- Disabled, Hidden, Checked -->

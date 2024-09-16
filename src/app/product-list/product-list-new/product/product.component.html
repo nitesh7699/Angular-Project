@@ -1,0 +1,10 @@
+<div class="productCls container my-3" >
+    <div class="mx-1">{{ idx+1 }}</div>
+    <div class="add-to-price mx-2">{{ '$'+ product.price }}</div>
+    <div class="product-name mx-1">{{ product.name }}</div>
+    <div class="product-category mx-1">{{product.gender}} . {{product.brand}}</div>
+    <div class=""product-available-colors>{{ product.color.length }} Colors . Best Sellers</div>
+    <div class="product-in-stock mx-2" [ngStyle]="{fontWeight: 'bold', color: product.is_in_inventory ? 'Green' : 'Red'}">
+        {{ product.is_in_inventory ? "available in stock": "Not available in stock"}}
+    </div>
+</div>

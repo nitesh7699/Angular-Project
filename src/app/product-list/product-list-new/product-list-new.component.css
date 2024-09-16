@@ -1,0 +1,23 @@
+/* .product-list-new-component{
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px 17vh;
+}
+
+.product-in-stock{
+    
+} */
+
+.product-list-new-item{
+    width: 700px;
+    height: 700px;
+    background-color: rgb(236, 225, 225);
+}
+
+.product-list-new-item-1{
+    background-color: rgb(169, 169, 230);
+    width: 300px;
+    height: 100px;
+    margin-top:20px;
+}

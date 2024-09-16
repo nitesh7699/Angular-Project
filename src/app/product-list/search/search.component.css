@@ -1,0 +1,18 @@
+.search-input{
+    width:500px;
+    background-color: rgba(242, 235, 235, 0.888);
+}
+
+.btn-search{
+    background-color: black;
+    color:white
+}
+
+.btn-search-disabled{
+    /* padding: 12px 30px; */
+    background-color: #aaa;
+    margin-left: -1px;
+    color: black;
+    border: #aaa 1px solid;
+    cursor: not-allowed;
+}
